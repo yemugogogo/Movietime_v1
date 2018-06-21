@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
 
-    android:layout_height="100dp"
+    android:padding="15dp"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
 
 
@@ -18,46 +19,89 @@
         android:layout_weight="0"
         android:scaleType="centerInside" />
 
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0"
-        android:layout_gravity="center_horizontal"
-
-        android:gravity="center_vertical">
-
+        android:orientation="vertical">
         <TextView
             android:id="@+id/movie_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="2"
             android:text="name"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
 
             />
 
-        <TextView
-            android:id="@+id/movie_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="date"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
 
-            />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
 
-        <TextView
-            android:id="@+id/movie_score"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="score"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_weight="0"
 
-            />
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="上映時間  :  "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="期待指數  :  "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_gravity="center_horizontal"
+
+                android:gravity="center_vertical">
+
+
+
+                <TextView
+                    android:id="@+id/movie_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="date"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                    />
+
+                <TextView
+                    android:id="@+id/movie_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="score"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
+
+
 
 
 
